@@ -2,39 +2,61 @@ def concatenate_example(string)
   # use concatenation to format the result to be "Classic <string>"
   "Classic " << string
 end
-
-def concatenate(string)
+ 
+ 
+ def concatenate(string)
   # use concatenation to format the result to be "Hello <string>!"
-end
-
-def substrings(word)
+  "Hello " + string + "!"
+ end
+ 
+ 
+ def substrings(word)
   # return the first 4 letters from the word using substrings
-end
-
-def capitalize(word)
+  word[0, 4]
+ end
+ 
+ 
+ def capitalize(word)
   # capitalize the first letter of the word
-end
-
-def uppercase(string)
+  word.capitalize
+ end
+ 
+ 
+ def uppercase(string)
   # uppercase all letters in the string
-end
-
-def downcase(string)
+  string.upcase
+ end
+ 
+ 
+ def downcase(string)
   # downcase all letters in the string
-end
-
-def empty_string(string)
+  string.downcase
+ end
+ 
+ 
+ def empty_string(string)
   # return true if the string is empty
-end
-
-def string_length(string)
+  string.empty?
+ end
+ 
+ 
+ def string_length(string)
   # return the length of the string
-end
-
-def reverse(string)
+  string.length
+ end
+ 
+ 
+ def reverse(string)
   # return the same string, with all of its characters reversed
-end
-
-def space_remover(string)
+  string.reverse
+ end
+ 
+ 
+ def space_remover(string)
   # remove all the spaces in the string using gsub
-end
+  string.gsub(" ", "")
+ end
+ 
+ 
+ 
+ 
